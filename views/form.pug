@@ -1,0 +1,8 @@
+header
+    h1= title
+main
+    section.form-container 
+        form(method='POST' action='/new')
+            input(type='text', placeholder='Write your message here' name='messageText' id='messageText')
+            input(type='text' placeholder='Username' name='username' id='username')
+            button(type='submit' id='submit-btn')= 'post'

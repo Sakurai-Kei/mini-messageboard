@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  each message, index in messages 
+    ul
+      each val, key in message 
+        li= key + ': ' + val
+  <a href='/new'>Go to Form</a>
+
